@@ -1,1 +1,40 @@
-<h2>Result</h2><p>Tweet: {{ tweet }}</p><p>Sentiment: {{ sentiment }}</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result - Judge Port</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fff5f5; color: #1a1a1a; }
+        nav { background-color: #8b0000; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #ffcccb; }
+        h2 { text-align: center; margin-top: 30px; color: #b22222; }
+        .container { max-width: 500px; margin: 40px auto; background: #ffe5e5; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center; }
+        .tweet-box { background: white; padding: 15px; border-radius: 8px; border-left: 5px solid #b22222; margin-bottom: 20px; text-align: left; }
+        .sentiment { font-size: 24px; font-weight: bold; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .Positive { background-color: #d4edda; color: #155724; }
+        .Negative { background-color: #f8d7da; color: #721c24; }
+        .Neutral { background-color: #fff3cd; color: #856404; }
+        a { display: inline-block; margin-top: 15px; padding: 10px 25px; background-color: #cc0000; color: white; border-radius: 4px; text-decoration: none; font-weight: bold; }
+        a:hover { background-color: #990000; }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/logout">Logout</a>
+</nav>
+<div class="container">
+    <h2>Prediction Result</h2>
+    <div class="tweet-box">
+        <strong>Your Comment:</strong>
+        <p>{{ tweet }}</p>
+    </div>
+    <div class="sentiment {{ sentiment }}">
+        Predicted Sentiment: {{ sentiment }}
+    </div>
+    <a href="/input">Try Another</a>
+</div>
+</body>
+</html>
