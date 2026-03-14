@@ -4,3 +4,5 @@ scikit-learn
 nltk
 mysqlclient
 gunicorn
+tensorflow
+keras
