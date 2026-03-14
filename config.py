@@ -1,4 +1,4 @@
-MYSQL_HOST = 'localhost'
-MYSQL_USER = 'root'
-MYSQL_PASSWORD = 'your_password'
-MYSQL_DB = 'twitter_sentiment'
+MYSQL_HOST = 'sql12.freesqldatabase.com'
+MYSQL_USER = 'sql12819939'
+MYSQL_PASSWORD = 'IxbLec9Tsg'
+MYSQL_DB = 'sql12819939'
